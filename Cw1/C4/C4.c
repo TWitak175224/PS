@@ -167,21 +167,27 @@ void z44(void) {
 void z45(void) {
     printf("Z45\n");
     unsigned int a;
-    double b, min = 1.7976931348623157e308, max =
-            1.7976931348623157e308 * -1;//ładniejszy zapis byłby przy użyciu float.h
+    double b, min, max;
+    //ładniejszy zapis byłby przy użyciu float.h pozbyłbym się wtedy pierwszego if'a w w forze,
+    // więc szybciej będzie działać(mniej operacji w pętli)
     printf("podaj liczbe naturalna: ");
     scanf("%d", &a);
     for (unsigned int i = 0; i < a; i++) {
         printf("podaj liczbe rzeczywista: ");
         scanf("%lf", &b);
-        if (b > max) {
-            max = b;
-        }
-        if (b < min) {
+        if (!i) {
             min = b;
+            max = b;
+        } else {
+            if (b > max) {
+                max = b;
+            }
+            if (b < min) {
+                min = b;
+            }
         }
     }
-    printf("najmniejsza z podanych liczb to: %f , a najwieksza to: %f",
+    printf("najmniejsza z podanych liczb to: %f , a najwieksza to: %f\n",
            min, max);
 }
 
@@ -197,22 +203,22 @@ void z46(void) {
         if ((previous > 0) && (b > 0))ilePar++;
         previous = b;
     }
-    printf("w podanym ciagu wystgepuje tyle par spelniajacych warunek: %d",
+    printf("w podanym ciagu wystgepuje tyle par spelniajacych warunek: %d\n",
            ilePar);
 }
 
 int main(void) {
     z42a();
-//    z42b();
-//    z42c();
-//    z42d();
-//    z42e();
-//    z42f();
-//    z42g();
-//    z42h();
-//    z43();
-//    z44();
-//    z45();
-//    z46();
+    z42b();
+    z42c();
+    z42d();
+    z42e();
+    z42f();
+    z42g();
+    z42h();
+    z43();
+    z44();
+    z45();
+    z46();
     return 0;
 }
