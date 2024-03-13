@@ -7,6 +7,7 @@
 
 
 #include <stdio.h>
+
 void z42a(void) {
     printf("Z42a)\n");
     unsigned int a, b, ileNieparzystych = 0;
@@ -19,7 +20,6 @@ void z42a(void) {
     }
     printf("wsrod podanych liczb %d jest nieparzyste", ileNieparzystych);
 }
-
 
 
 int main(void) {

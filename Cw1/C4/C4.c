@@ -72,7 +72,7 @@ void z42e(void) {
         scanf("%d", &b);
         silnia *= (i + 1);
         if ((i > 0) && (i < a)) {
-            if ((pow(2, i) < b) && (b < silnia))ileSpelniajacychWarunek++;
+            if ((pow(2, (i+1)) < b) && (b < silnia))ileSpelniajacychWarunek++;
         }
     }
     printf("wsrod podanych liczb %d spelnia warunek",
