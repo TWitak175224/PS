@@ -1,3 +1,12 @@
-//
-// Created by local on 16.03.2024.
-//
+#include <stdio.h>
+void z31(void){
+    printf("wprowadz znak po enterze");
+}
+
+
+
+
+int main(void){
+
+    return 0;
+}

@@ -1,7 +1,10 @@
 #include <stdio.h>
 #import<math.h>
 
-void z5a(int n) {
+void z5a() {
+    int n;
+    printf("wprowadz liczbe naturalna: ");
+    scanf("%d",&n);
     int flag = 0;
     for (int i = 2; i < n; i++) {
         for (int j = 2; j <= i; j++) {
@@ -17,7 +20,10 @@ void z5a(int n) {
     }
 }
 
-void z5b(int n) {
+void z5b() {
+    int n;
+    printf("wprowadz liczbe naturalna: ");
+    scanf("%d",&n);
     int checker = 0;
     for (int i = 1; i < n; i++) {
         for (int j = 1; j < i; j++) {
@@ -30,7 +36,10 @@ void z5b(int n) {
     }
 }
 
-void z5c(int n) {
+void z5c() {
+    int n;
+    printf("wprowadz liczbe naturalna: ");
+    scanf("%d",&n);
     int checker = 0;
     for (int i = 2; i <= n; i++) {
         if (!(n % i)) {
@@ -45,7 +54,10 @@ void z5c(int n) {
     }
 }
 
-void z5d(int n) {
+void z5d() {
+    int n;
+    printf("wprowadz liczbe naturalna: ");
+    scanf("%d",&n);
     int ciag_fib_n1 = 0;
     int ciag_fib_n2 = 1;
     int ciag_fib_n = 0;
@@ -57,7 +69,10 @@ void z5d(int n) {
     printf("%d\n", ciag_fib_n2);
 }
 
-void z5ei(int a) {
+void z5ei() {
+    int a;
+    printf("wprowadz liczbe naturalna: ");
+    scanf("%d",&a);
     int i = 0, k = (int) sqrt(a), j = 0;
     for (;; i++) {
 
@@ -89,7 +104,10 @@ void z5ei(int a) {
 
 }
 
-void z5eii(int a) {
+void z5eii() {
+    int a;
+    printf("wprowadz liczbe naturalna: ");
+    scanf("%d",&a);
     int flag = 1;
     for (int i = 0; i < sqrt(a); i++) {
 

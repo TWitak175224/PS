@@ -49,29 +49,11 @@ cmake_ninja_workdir = D$:/175224/PS/cmake-build-debug/
 
 build cmake_object_order_depends_target_PS: phony || CMakeFiles/PS.dir
 
-build CMakeFiles/PS.dir/C1/main.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/PS/C1/main.c || cmake_object_order_depends_target_PS
-  DEP_FILE = CMakeFiles\PS.dir\C1\main.c.obj.d
+build CMakeFiles/PS.dir/Cw1/main.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/PS/Cw1/main.c || cmake_object_order_depends_target_PS
+  DEP_FILE = CMakeFiles\PS.dir\Cw1\main.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\PS.dir
-  OBJECT_FILE_DIR = CMakeFiles\PS.dir\C1
-
-build CMakeFiles/PS.dir/C2/Z2.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/PS/C2/Z2.c || cmake_object_order_depends_target_PS
-  DEP_FILE = CMakeFiles\PS.dir\C2\Z2.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\PS.dir
-  OBJECT_FILE_DIR = CMakeFiles\PS.dir\C2
-
-build CMakeFiles/PS.dir/C2/Z1.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/PS/C2/Z1.c || cmake_object_order_depends_target_PS
-  DEP_FILE = CMakeFiles\PS.dir\C2\Z1.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\PS.dir
-  OBJECT_FILE_DIR = CMakeFiles\PS.dir\C2
-
-build CMakeFiles/PS.dir/C2/Z3.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/PS/C2/Z3.c || cmake_object_order_depends_target_PS
-  DEP_FILE = CMakeFiles\PS.dir\C2\Z3.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\PS.dir
-  OBJECT_FILE_DIR = CMakeFiles\PS.dir\C2
+  OBJECT_FILE_DIR = CMakeFiles\PS.dir\Cw1
 
 
 # =============================================================================
@@ -81,7 +63,7 @@ build CMakeFiles/PS.dir/C2/Z3.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/P
 #############################################
 # Link the executable PS.exe
 
-build PS.exe: C_EXECUTABLE_LINKER__PS_Debug CMakeFiles/PS.dir/C1/main.c.obj CMakeFiles/PS.dir/C2/Z2.c.obj CMakeFiles/PS.dir/C2/Z1.c.obj CMakeFiles/PS.dir/C2/Z3.c.obj
+build PS.exe: C_EXECUTABLE_LINKER__PS_Debug CMakeFiles/PS.dir/Cw1/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PS.dir
@@ -90,6 +72,270 @@ build PS.exe: C_EXECUTABLE_LINKER__PS_Debug CMakeFiles/PS.dir/C1/main.c.obj CMak
   TARGET_FILE = PS.exe
   TARGET_IMPLIB = libPS.dll.a
   TARGET_PDB = PS.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C1
+
+
+#############################################
+# Order-only phony target for C1
+
+build cmake_object_order_depends_target_C1: phony || CMakeFiles/C1.dir
+
+build CMakeFiles/C1.dir/Cw1/C1/C1.c.obj: C_COMPILER__C1_unscanned_Debug D$:/175224/PS/Cw1/C1/C1.c || cmake_object_order_depends_target_C1
+  DEP_FILE = CMakeFiles\C1.dir\Cw1\C1\C1.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C1.dir
+  OBJECT_FILE_DIR = CMakeFiles\C1.dir\Cw1\C1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C1
+
+
+#############################################
+# Link the executable C1.exe
+
+build C1.exe: C_EXECUTABLE_LINKER__C1_Debug CMakeFiles/C1.dir/Cw1/C1/C1.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C1.exe
+  TARGET_IMPLIB = libC1.dll.a
+  TARGET_PDB = C1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C2
+
+
+#############################################
+# Order-only phony target for C2
+
+build cmake_object_order_depends_target_C2: phony || CMakeFiles/C2.dir
+
+build CMakeFiles/C2.dir/Cw1/C2/C2.c.obj: C_COMPILER__C2_unscanned_Debug D$:/175224/PS/Cw1/C2/C2.c || cmake_object_order_depends_target_C2
+  DEP_FILE = CMakeFiles\C2.dir\Cw1\C2\C2.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C2.dir
+  OBJECT_FILE_DIR = CMakeFiles\C2.dir\Cw1\C2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C2
+
+
+#############################################
+# Link the executable C2.exe
+
+build C2.exe: C_EXECUTABLE_LINKER__C2_Debug CMakeFiles/C2.dir/Cw1/C2/C2.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C2.exe
+  TARGET_IMPLIB = libC2.dll.a
+  TARGET_PDB = C2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C3
+
+
+#############################################
+# Order-only phony target for C3
+
+build cmake_object_order_depends_target_C3: phony || CMakeFiles/C3.dir
+
+build CMakeFiles/C3.dir/Cw1/C3/C3.c.obj: C_COMPILER__C3_unscanned_Debug D$:/175224/PS/Cw1/C3/C3.c || cmake_object_order_depends_target_C3
+  DEP_FILE = CMakeFiles\C3.dir\Cw1\C3\C3.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C3.dir
+  OBJECT_FILE_DIR = CMakeFiles\C3.dir\Cw1\C3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C3
+
+
+#############################################
+# Link the executable C3.exe
+
+build C3.exe: C_EXECUTABLE_LINKER__C3_Debug CMakeFiles/C3.dir/Cw1/C3/C3.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C3.exe
+  TARGET_IMPLIB = libC3.dll.a
+  TARGET_PDB = C3.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C4
+
+
+#############################################
+# Order-only phony target for C4
+
+build cmake_object_order_depends_target_C4: phony || CMakeFiles/C4.dir
+
+build CMakeFiles/C4.dir/Cw1/C4/C4.c.obj: C_COMPILER__C4_unscanned_Debug D$:/175224/PS/Cw1/C4/C4.c || cmake_object_order_depends_target_C4
+  DEP_FILE = CMakeFiles\C4.dir\Cw1\C4\C4.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C4.dir
+  OBJECT_FILE_DIR = CMakeFiles\C4.dir\Cw1\C4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C4
+
+
+#############################################
+# Link the executable C4.exe
+
+build C4.exe: C_EXECUTABLE_LINKER__C4_Debug CMakeFiles/C4.dir/Cw1/C4/C4.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C4.exe
+  TARGET_IMPLIB = libC4.dll.a
+  TARGET_PDB = C4.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C2z1
+
+
+#############################################
+# Order-only phony target for C2z1
+
+build cmake_object_order_depends_target_C2z1: phony || CMakeFiles/C2z1.dir
+
+build CMakeFiles/C2z1.dir/C2/C2z1.c.obj: C_COMPILER__C2z1_unscanned_Debug D$:/175224/PS/C2/C2z1.c || cmake_object_order_depends_target_C2z1
+  DEP_FILE = CMakeFiles\C2z1.dir\C2\C2z1.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C2z1.dir
+  OBJECT_FILE_DIR = CMakeFiles\C2z1.dir\C2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C2z1
+
+
+#############################################
+# Link the executable C2z1.exe
+
+build C2z1.exe: C_EXECUTABLE_LINKER__C2z1_Debug CMakeFiles/C2z1.dir/C2/C2z1.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C2z1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C2z1.exe
+  TARGET_IMPLIB = libC2z1.dll.a
+  TARGET_PDB = C2z1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C2z2
+
+
+#############################################
+# Order-only phony target for C2z2
+
+build cmake_object_order_depends_target_C2z2: phony || CMakeFiles/C2z2.dir
+
+build CMakeFiles/C2z2.dir/C2/C2z2.c.obj: C_COMPILER__C2z2_unscanned_Debug D$:/175224/PS/C2/C2z2.c || cmake_object_order_depends_target_C2z2
+  DEP_FILE = CMakeFiles\C2z2.dir\C2\C2z2.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C2z2.dir
+  OBJECT_FILE_DIR = CMakeFiles\C2z2.dir\C2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C2z2
+
+
+#############################################
+# Link the executable C2z2.exe
+
+build C2z2.exe: C_EXECUTABLE_LINKER__C2z2_Debug CMakeFiles/C2z2.dir/C2/C2z2.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C2z2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C2z2.exe
+  TARGET_IMPLIB = libC2z2.dll.a
+  TARGET_PDB = C2z2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C2z3
+
+
+#############################################
+# Order-only phony target for C2z3
+
+build cmake_object_order_depends_target_C2z3: phony || CMakeFiles/C2z3.dir
+
+build CMakeFiles/C2z3.dir/C2/C2z3.c.obj: C_COMPILER__C2z3_unscanned_Debug D$:/175224/PS/C2/C2z3.c || cmake_object_order_depends_target_C2z3
+  DEP_FILE = CMakeFiles\C2z3.dir\C2\C2z3.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C2z3.dir
+  OBJECT_FILE_DIR = CMakeFiles\C2z3.dir\C2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C2z3
+
+
+#############################################
+# Link the executable C2z3.exe
+
+build C2z3.exe: C_EXECUTABLE_LINKER__C2z3_Debug CMakeFiles/C2z3.dir/C2/C2z3.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C2z3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C2z3.exe
+  TARGET_IMPLIB = libC2z3.dll.a
+  TARGET_PDB = C2z3.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Blad
+
+
+#############################################
+# Order-only phony target for Blad
+
+build cmake_object_order_depends_target_Blad: phony || CMakeFiles/Blad.dir
+
+build CMakeFiles/Blad.dir/Cw1/Blad175224.c.obj: C_COMPILER__Blad_unscanned_Debug D$:/175224/PS/Cw1/Blad175224.c || cmake_object_order_depends_target_Blad
+  DEP_FILE = CMakeFiles\Blad.dir\Cw1\Blad175224.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Blad.dir
+  OBJECT_FILE_DIR = CMakeFiles\Blad.dir\Cw1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Blad
+
+
+#############################################
+# Link the executable Blad.exe
+
+build Blad.exe: C_EXECUTABLE_LINKER__Blad_Debug CMakeFiles/Blad.dir/Cw1/Blad175224.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Blad.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Blad.exe
+  TARGET_IMPLIB = libBlad.dll.a
+  TARGET_PDB = Blad.exe.dbg
 
 
 #############################################
@@ -117,6 +363,22 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Blad: phony Blad.exe
+
+build C1: phony C1.exe
+
+build C2: phony C2.exe
+
+build C2z1: phony C2z1.exe
+
+build C2z2: phony C2z2.exe
+
+build C2z3: phony C2z3.exe
+
+build C3: phony C3.exe
+
+build C4: phony C4.exe
+
 build PS: phony PS.exe
 
 # =============================================================================
@@ -127,7 +389,7 @@ build PS: phony PS.exe
 #############################################
 # Folder: D:/175224/PS/cmake-build-debug
 
-build all: phony PS.exe
+build all: phony PS.exe C1.exe C2.exe C3.exe C4.exe C2z1.exe C2z2.exe C2z3.exe Blad.exe
 
 # =============================================================================
 # Built-in targets
