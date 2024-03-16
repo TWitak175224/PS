@@ -1,3 +1,0 @@
-D:/175224/PS/cmake-build-debug/CMakeFiles/PS.dir
-D:/175224/PS/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/175224/PS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
