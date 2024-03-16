@@ -55,6 +55,24 @@ build CMakeFiles/PS.dir/C1/main.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224
   OBJECT_DIR = CMakeFiles\PS.dir
   OBJECT_FILE_DIR = CMakeFiles\PS.dir\C1
 
+build CMakeFiles/PS.dir/C2/Z2.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/PS/C2/Z2.c || cmake_object_order_depends_target_PS
+  DEP_FILE = CMakeFiles\PS.dir\C2\Z2.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\PS.dir
+  OBJECT_FILE_DIR = CMakeFiles\PS.dir\C2
+
+build CMakeFiles/PS.dir/C2/Z1.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/PS/C2/Z1.c || cmake_object_order_depends_target_PS
+  DEP_FILE = CMakeFiles\PS.dir\C2\Z1.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\PS.dir
+  OBJECT_FILE_DIR = CMakeFiles\PS.dir\C2
+
+build CMakeFiles/PS.dir/C2/Z3.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224/PS/C2/Z3.c || cmake_object_order_depends_target_PS
+  DEP_FILE = CMakeFiles\PS.dir\C2\Z3.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\PS.dir
+  OBJECT_FILE_DIR = CMakeFiles\PS.dir\C2
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target PS
@@ -63,7 +81,7 @@ build CMakeFiles/PS.dir/C1/main.c.obj: C_COMPILER__PS_unscanned_Debug D$:/175224
 #############################################
 # Link the executable PS.exe
 
-build PS.exe: C_EXECUTABLE_LINKER__PS_Debug CMakeFiles/PS.dir/C1/main.c.obj
+build PS.exe: C_EXECUTABLE_LINKER__PS_Debug CMakeFiles/PS.dir/C1/main.c.obj CMakeFiles/PS.dir/C2/Z2.c.obj CMakeFiles/PS.dir/C2/Z1.c.obj CMakeFiles/PS.dir/C2/Z3.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PS.dir
