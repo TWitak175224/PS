@@ -11,7 +11,7 @@ int sgn(double x){
         return 0;
 }
 double namniejsza(double x,double y,double z){
-    if x
+    if
 }
 
 
