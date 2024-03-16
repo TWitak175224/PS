@@ -5,7 +5,7 @@ int sgn(double x) {
         return -1;
     } else if (x > 0) {
         return 1;
-    } else
+    } else if(x==0);
         return 0;
 }
 
@@ -47,13 +47,34 @@ int pierwsza_cyfra(int n){
         n/=10;
     }
 }
+int ostatnia_cyfra(int n){
+    return (n%10);
+}
+int ile_cyfr(int n){
+    int i = 1;
+    for(;;i++){
+        if(!(n/10))
+            return i;
+        n/=10;
+    }
+}
+double procent_skladany(double pieniadze,double procent,int lata){
+    for(int i = 0;i<lata;i++){
+        pieniadze*=(1+(procent/100));
+    }
+    return pieniadze;
+}
 
 
 int main(void) {
-    printf("%f",sgn(-2));
-    printf("%f", namniejsza(3,-4.3,-19.3));
-    printf("%f", potega(2,2));
-    printf("%f",potega(2,-2));
+    printf("%d\n",sgn((-2.0)));
+    printf("%f\n", namniejsza(3,-4.3,-19.3));
+    printf("%f\n", potega(2,2));
+    printf("%f\n",potega(2,-2));
+    printf("%d\n", pierwsza_cyfra(123));
+    printf("%d\n", ostatnia_cyfra(234));
+    printf("%d\n", ile_cyfr(0));
+    printf("%f\n", procent_skladany(100,10,2));
 
     return 0;
 }
