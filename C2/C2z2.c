@@ -2,6 +2,7 @@
 #import<math.h>
 
 void z5a() {
+    printf("zadanie 5a\n");
     int n;
     printf("wprowadz liczbe naturalna: ");
     scanf("%d",&n);
@@ -21,6 +22,7 @@ void z5a() {
 }
 
 void z5b() {
+    printf("zadanie 5b\n");
     int n;
     printf("wprowadz liczbe naturalna: ");
     scanf("%d",&n);
@@ -37,6 +39,7 @@ void z5b() {
 }
 
 void z5c() {
+    printf("zadanie 5c\n");
     int n;
     printf("wprowadz liczbe naturalna: ");
     scanf("%d",&n);
@@ -55,6 +58,7 @@ void z5c() {
 }
 
 void z5d() {
+    printf("zadanie 5d\n");
     int n;
     printf("wprowadz liczbe naturalna: ");
     scanf("%d",&n);
@@ -70,32 +74,32 @@ void z5d() {
 }
 
 void z5ei() {
-    int a;
+    printf("zadanie 5ei\n");
+    int n;
     printf("wprowadz liczbe naturalna: ");
-    scanf("%d",&a);
-    int i = 0, k = (int) sqrt(a), j = 0;
+    scanf("%d",&n);
+    int i = 0, k = (int) sqrt(n), j = 0;
     for (;; i++) {
 
         for (;; j++) {
 
-            for (;; k++) {
-                if ((k * k) > a) {
-                    k--;
+            for (;; k--) {
+                if ((k * k) < n) {
                     break;
                 }
             }
-            if (((j * j) + (k * k)) > a) {
+            if (((j * j) + (k * k)) > n) {
                 j--;
                 break;
             }
         }
-        if (((i * i) + (k * k) + (j * j)) > a) {
+        if (((i * i) + (k * k) + (j * j)) > n) {
             i--;
             break;
         }
 
     }
-    if ((i * i) + (j * j) + (k * k) == a)
+    if ((i * i) + (j * j) + (k * k) == n)
         printf("%d %d %d", i, j, k);
     else {
         printf("nie moge utworzyc tej liczby :<\n");
@@ -105,16 +109,17 @@ void z5ei() {
 }
 
 void z5eii() {
-    int a;
+    printf("zadanie 5eii \n");
+    int n;
     printf("wprowadz liczbe naturalna: ");
-    scanf("%d",&a);
+    scanf("%d",&n);
     int flag = 1;
-    for (int i = 0; i < sqrt(a); i++) {
+    for (int i = 0; i < sqrt(n); i++) {
 
-        for (int j = 0; j < sqrt(a); j++) {
+        for (int j = 0; j < sqrt(n); j++) {
 
-            for (int k = 0; k < sqrt(a); k++) {
-                if (((i * i) + (k * k) + (j * j)) == a) {
+            for (int k = 0; k < sqrt(n); k++) {
+                if (((i * i) + (k * k) + (j * j)) == n) {
                     printf("%d %d %d\n", i, j, k);
                     flag = 0;
                 }
@@ -128,8 +133,12 @@ void z5eii() {
 
 }
 
-void z6(int a) {
-    int flag = 1;
+void z6() {
+    printf("zadanie 6\n");
+    int a;
+    printf("wprowadz liczbe naturalna: ");
+    scanf("%d",&a);
+
     for (int l = 0; l <sqrt(a); l++) {
 
         for (int i = 0; i < sqrt(a); i++) {
@@ -139,7 +148,6 @@ void z6(int a) {
                 for (int k = 0; k < sqrt(a); k++) {
                     if (((l*l)+(i * i) + (k * k) + (j * j)) == a) {
                         printf("%d %d %d %d\n", l,i, j, k);
-                        flag = 0;
                     }
                 }
             }
@@ -148,14 +156,18 @@ void z6(int a) {
 }
 
 int main(void) {
-//    z5a(9);
-//    printf("\n");
-//    z5b(1000);
-//    printf("\n");
-//    z5c(6);
-//    printf("\n");
-//    z5d(55);
-//    printf("\n");
-    z6(26);
+    z5a();
+    printf("\n");
+    z5b();
+    printf("\n");
+    z5c();
+    printf("\n");
+    z5d();
+    printf("\n");
+    z5ei();
+    printf("\n");
+    z5eii();
+    printf("\n");
+    z6();
     return 0;
 }

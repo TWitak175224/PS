@@ -5,7 +5,7 @@ int sgn(double x) {
         return -1;
     } else if (x > 0) {
         return 1;
-    } else if(x==0);
+    } else
         return 0;
 }
 
